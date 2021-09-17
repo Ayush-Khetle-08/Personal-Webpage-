@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+         body{
+          background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.493)),url("./img/59-596248_background-blur-wallpaper-hd.jpg") ;   
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: center;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        border: none;
+      }
+      nav{
+          width: 100%;
+          height: 8vh;
+          background-color: rgba(0, 0, 0, 0.26);
+          color: white;
+          text-align: center;
+          align-items: center;
+      }
+      a{
+          text-decoration: none;
+          color: white;
+          margin: 12px;
+          text-transform: uppercase;
+          letter-spacing: 4px;
+          line-height: 50px;
+        
+      }
+      .hello{
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50% , -50%);
+          color: white;
+           text-align: center;
+          font-size: 45px;
+      }
+      .grid {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  align-items: stretch;
+  
+  }
+h5{
+    color: grey;
+}
+h4{
+    color: grey;
+}
+h2{
+    color:  crimson;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  border-radius: 3px;
+  text-align: center;
+}
+
+.grid > article:hover{
+  transition: transform .1s ease-out;
+  transform: translateY(5px);
+}
+
+.grid > article img {
+  width: 100%;
+}
+
+
+.text {
+  padding: 0 20px 20px;
+}
+
+.text > h3{
+  text-transform: uppercase;
+  color:  yellowgreen;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text > button {
+  background: linear-gradient(to right, #f030a7, #f0308d, #f03061);
+  border-radius: 3px;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  font-weight: 600;
+  text-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  text-transform: uppercase;
+}
+ .hover{
+     height: 200px;
+ }
+ .container{
+     margin-top: 10px;
+    text-align: center;
+}
+
+.img3{
+    margin-top: 25px;
+}
+h3{
+    color:  silver;
+    font-family :-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+    letter-spacing: 2px;
+}
+.last{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 8px 8px;
+}
+h5{
+    color: white;
+}
+@media only screen and (max-width: 768px){
+     .img3{
+         width: 360px;
+         box-shadow:none;
+         height: auto;
+     }
+     h3{
+         font-family: cursive;
+     }
+}
+
+@media (max-width: 768px){
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px){
+  .grid{
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+  }
+
+  .grid > article{
+    text-align: center;
+  }
+}
+     </style>
+</head>
+<body>
+  <section id="hero">
+  <nav>  
+    <ul>
+        <a href="index.html"> Home</a>
+        <a href="about.html"> About</a>
+        <a href="contact.html">Contact</a>
+    </ul>
+</nav>
+</section>
+    <div class="about">
+        <h2> About Me and Projects</h2>
+    </div>
+    <main class="grid">
+        <article>
+          <img class="hover" src="./img/photo-1503676260728-1c00da094a0b.jpg" alt="Sample photo">
+          <div class="text">
+            <h3>About Me</h3>
+  <h6><ion-icon name="pin"></ion-icon></h6>
+            <p> <h4>  I am a student.I study in class 10th. I am an html and css intermediate .</h4></p>
+           
+          </div>
+        </article>
+        <article>
+          <img class="hover" src="./img/3548491.jpg" alt="Sample photo">
+          <div class="text">
+            <h3>My Hobbies</h3>
+  <ion-icon name="call"></ion-icon>
+            <p> <h4>When I'm not at work, I really love to watch Cricket and to play cricket and many games. I also like to spend time with friends</h4> </p>
+            
+          </div>
+        </article>
+        <article>
+          <img class="hover" src="./img/photo-1555066931-4365d14bab8c.jpg" alt="Sample photo">
+          <div class="text">
+            <h3>About my Coding</h3>
+  <ion-icon name="mail"></ion-icon>
+            <p> <h4>I know about html css but I am not a professional web designer . I can Build website that you like . This is my personal website and from this website you can know about my coding of html and css . I also know about javascript but not all like html and css.  </h4></p>
+           
+          </div>
+        </article>
+      </main>
+      <h3> This all are my Projects of webpage of many website</h3>
+    <div class="container">
+    <div class="img2"> 
+    <img class ="img3" src="./img/image-1.jpg" width="650px" height="400px"> <br> <br> 
+    <img class ="img3" src="./img/image-2.jpg" width="650px" height="400px">
+</div>
+<div class="img4"> 
+    <img class ="img3" src="./img/image-3.jpg" width="650px" height="400px"><br> <br>
+    <img class ="img3" src="./img/image-4.jpg" width="650px" height="400px">
+    </div>
+    <div class="img6"> 
+    <img class ="img3" src="./img/image-5.jpg" width="650px" height="400px"><br> <br>
+    <img class ="img3" src="./img/image-6.jpg" width="650px" height="400px">
+    </div>
+    <div class="img8"> 
+    <img class ="img3" src="./img/image-7.jpg" width="650px" height="400px">
+    <img class ="img3" src="./img/image-8.jpg" width="650px" height="400px">
+    <h3> I don't make E-Commerce Website</h3>
+</div>
+</div>
+<div class="last"> 
+  Ayush Khetle <br><br>
+  9920637116  <br><br>
+Copyright © 2021 Ayush Khetle - All Rights Reserved.
+</div>
+</body>
+</html>
